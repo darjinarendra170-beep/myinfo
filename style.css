@@ -1,0 +1,273 @@
+*{
+    margin:0;
+    box-sizing:border-box;
+}
+
+
+
+
+body{
+    background-color:#4A3F35;
+}
+
+
+
+.upperbox{
+    height:500px;
+    
+    text-align:center;
+    color:white;
+    height:200px;
+}
+.main-heading{
+    font-size:4rem;
+    animation-name: upper;
+    animation-timing-function: ease-out;
+    animation-duration: 1s;
+    
+    
+    
+    
+}
+.main-para{
+    position:relative;
+    font-size:25px;
+    animation-name:para;
+    animation-timing-function: ease-out;
+    animation-duration:1s;
+    
+}
+.upper-inside{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    height:100%;
+
+}
+@keyframes upper{
+    from{
+        transform:translatey(-70px);
+    }
+    to{
+        transform:translatey(0px);
+    }
+}
+
+@keyframes para{
+    from{
+        font-size:16px;
+    }
+    to{
+        font-size:25px;
+    }
+}
+
+#toggle{
+    display:none;
+}
+label{
+    color:white;
+    display:inline-block;
+    
+    height:40px;
+    width:100px;
+    text-align: center;
+    margin-left:650px;
+    border:2px solid black;
+    border-radius:12px;
+    font-size:1.5rem;
+    font-weight:1000;
+    cursor:pointer;
+}
+.main-content{
+    height:600px;
+    
+    display:none;
+
+}
+#toggle:checked ~ .main-content{
+    display:block;
+}
+
+
+
+
+
+
+
+.outer{
+    height:50px;
+    width:900px;
+    
+    margin-top:15px;
+    display:flex;
+    
+
+}
+
+.inside{
+    color:white;
+    border:2px solid black;
+    border-radius:10px;
+    height:100%;
+    width:400px;
+    margin-left:50px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:2rem;
+    font-weight:900;
+    background-color:#112D4E;
+    z-index:1;
+}
+.outer-input{
+    height: 100%;
+    width:400px;
+    position:relative;
+    right:400px;
+    
+    
+    
+}
+
+input{
+    height:47px;
+    width:100%;
+    border-radius:10px;
+    position:relative;
+    
+
+    
+}
+@keyframes name{
+    from{
+        transform:translatex(-455px);
+    }
+    to{
+        transform:translatex(0px);
+    }
+}
+
+.name{
+    animation-name:name;
+    animation-timing-function: ease-out;
+    animation-duration:0.8s;
+}
+@keyframes father{
+    from{
+        transform:translatex(-455px);
+    }
+    to{
+        transform:translatex(0px);
+    }
+}
+.father{
+    transform:translatex(-455px);
+    animation-name:father;
+    animation-timing-function:ease-out;
+    animation-duration:0.8s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.3s;
+}
+
+@keyframes mother{
+    from{
+        transform:translatex(-455px);
+    }
+    to{
+        transform:translatex(0px);
+    }
+}
+.mother{
+    transform:translatex(-455px);
+    animation-name:mother;
+    animation-timing-function:ease-out;
+    animation-duration:0.8s;
+    animation-delay:0.6s;
+    animation-fill-mode:forwards;
+}
+@keyframes email{
+    from{
+        transform:translatex(-455px);
+    }
+    to{
+        transform:translatex(0px);
+    }
+}
+
+.email{
+    transform:translatex(-455px);
+    animation:email 0.8s ease-out 0.9s forwards;
+}
+
+@keyframes address{
+    from{
+        transform:translatex(-455px);
+    }
+    to{
+        transform:translatex(0px);
+    }
+}
+.address{
+    transform:translatex(-455px);
+    animation:email 0.8s ease-out 1.2s forwards;
+}
+@keyframes mobile{
+    from{
+        transform:translatex(-455px);
+    }
+    to{
+        transform:translatex(0px);
+    }
+}
+.mobile{
+    transform:translatex(-455px);
+    animation:email 0.8s ease-out 1.5s forwards;
+}
+@keyframes purpose{
+    from{
+        transform:translatex(-455px);
+    }
+    to{
+        transform:translatex(0px);
+    }
+}
+.purpose{
+    transform:translatex(-455px);
+    animation:email 0.8s ease-out 1.8s forwards;
+}
+.inside:hover + .input-div{
+    transform:translatex(400px);
+}
+.input-div{
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+
+}
+.input-div:hover{
+    transform:translatex(400px);
+}
+
+.submit-div{
+    height:50px;
+    
+    margin-top:50px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+button{
+    height:100%;
+    width:100px;
+    background-color:blue;
+    color:white;
+    font-size:1rem;
+    font-weight:700;
+    border-radius:8px;
+    transition-duration: 0.5s;
+}
+button:hover{
+    font-size:1.3rem;
+}
+
